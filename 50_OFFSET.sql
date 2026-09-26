@@ -10,3 +10,4 @@ ORDER BY ProductKey
 OFFSET 10 ROWS
 FETCH FIRST 10 ROWS ONLY
 -- The above query will display rows from 11 to 20
+-- Instead of FIRST, another keyword 'NEXT' could also have been used instead
