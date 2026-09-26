@@ -17,3 +17,5 @@ VALUES
 
 SELECT * FROM VendorPayments;
 
+SELECT COALESCE(NULL,1, NULL, 41, 25);
+-- The output shall be 1, COALESCE function returns first not NULL value
