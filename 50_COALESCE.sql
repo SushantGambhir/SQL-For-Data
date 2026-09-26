@@ -19,3 +19,9 @@ SELECT * FROM VendorPayments;
 
 SELECT COALESCE(NULL,1, NULL, 41, 25);
 -- The output shall be 1, COALESCE function returns first not NULL value
+
+-- Problems statement:
+-- We have different amount frequency based on vendor, so what do we do if we want yearly data for all?
+SELECT VendorId, VendorName,
+COALESCE(Yearly,HalfYearly*2,Quaterly*4,Monthly*12) AS Rate
+FROM VendorPayments;
