@@ -26,7 +26,7 @@ FROM FactInternetSales
 SELECT SUM(SalesAmount)
 AS TotalSales,
 AVG(SalesAmount)
-AverageSales
+AS AverageSales
 FROM FactInternetSales
 
 -- Number of rows in a table
