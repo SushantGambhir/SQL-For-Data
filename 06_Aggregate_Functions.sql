@@ -1,3 +1,6 @@
+SELECT COUNT(*)
+FROM FactInternetSales
+
 SELECT SalesAmount
 FROM FactInternetSales
 
